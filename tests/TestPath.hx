@@ -33,6 +33,7 @@ class TestPath extends Base {
     assertEquals('../../add', Path.normalize('../remove/../../add'));
     assertEquals('../../', Path.normalize('../remove/../../alsoremove/..'));
     assertEquals('../../', Path.normalize('../remove/../../alsoremove/../'));
+    assertEquals('//', Path.normalize('//'));
   }
     
 }
